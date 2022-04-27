@@ -1,0 +1,38 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Student</li>
+  </ol>
+</nav>
+
+<div class="view-user p-5">
+  {{#each rows}}
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h3>{{this.name}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Month</th>
+            <th scope="col">Attendance</th>
+             <th scope="col">ID</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">{{this.month}}</th>
+            <td>{{this.total_Att}}</td>
+             <td>{{this.studentID}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {{/each}}
+
+</div>
