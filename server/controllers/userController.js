@@ -232,7 +232,7 @@ exports.delete = (req, res) => {
 
   connection.query('DELETE FROM student WHERE id = ?', [req.params.id], (err, rows) => {
     if(!err) {
-      res.redirect('/');
+      res.redirect('/view');
     } else {
       console.log(err);
     }

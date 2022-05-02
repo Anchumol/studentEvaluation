@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+serif');
 body{
     background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
-     padding:0;
-      margin:1;
+  
 }
 i{
     color:#0f97f9;

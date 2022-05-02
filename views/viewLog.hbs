@@ -1,7 +1,15 @@
+<style>
+  th{
+    color: white;
+  }
+  td{
+    color: white;
+  }
+</style>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">View Student</li>
+    <li class="breadcrumb-item"><a href="/view" class="btn btn-light">Home</a></li>
+    
   </ol>
 </nav>
 
@@ -9,7 +17,7 @@
   {{#each rows}}
   <div class="row mb-5">
     <div class="col text-center">
-      <h3>{{this.name}}</h3>
+      <h3 style="color: white;">{{this.name}}</h3>
     </div>
   </div>
   <div class="row">
